@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(#0bb8ec, #31caca, #ade7f8);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.meteo-header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.meteo-header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.coord {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(223, 7, 7, 0.2);
+    color: white;
+    margin: 0 5px;
+    backdrop-filter: blur(10px);
+    width: 200px;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.weather-display {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.city-name {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 6em;
+    margin: 20px 0;
+}
+
+.weather-icon {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    margin: 0 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    color: white;
+    margin-right: 10px;
+}

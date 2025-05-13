@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Meteo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="meteo-header">
+        <h1>Meteopouik</h1>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" placeholder="Rechercher une ville...">
+        </div>
+    </header>
+
+    <main class="navcoord">
+
+        <div class="coord">
+            <input type="text" id="lat-input" placeholder="latitude...">
+            <input type="text" id="lon-input" placeholder="longitude...">
+            <button type="button" id="coord-search">Rechercher</button>
+            <button type="button" id="locate-me">Chez moi</button>
+        </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
