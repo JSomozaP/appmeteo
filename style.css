@@ -1,8 +1,13 @@
 body {
-    background: linear-gradient(#0bb8ec, #31caca, #ade7f8);
     margin: 0;
     padding: 20px;
     min-height: 100vh;
+    transition: background 2s ease;
+    background: linear-gradient(#0bb8ec, #31caca, #ade7f8); /* thème par défaut */
+}
+
+body.night-theme {
+    background: linear-gradient(#1a237e, #283593, #303f9f);
 }
 
 .meteo-header {
@@ -56,6 +61,13 @@ input[type="text"]::placeholder {
 .weather-icon {
     font-size: 3em;
     margin: 20px 0;
+}
+
+.local-time {
+    font-size: 1.5em;
+    color: white;
+    margin: 10px 0;
+    opacity: 0.9;
 }
 
 button {
