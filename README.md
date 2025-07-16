@@ -28,12 +28,22 @@ L'application change automatiquement de thème en fonction de l'heure locale de 
 
 ### 📱 Interface Utilisateur
 - Design moderne avec effets de transparence (backdrop-filter)
-- Interface responsive adaptée à tous les écrans
+- **Interface responsive** adaptée à tous les écrans :
+  - 📱 Smartphones (320px - 480px)
+  - 📟 Tablettes (481px - 768px)
+  - 💻 Desktop (769px+)
 - Transitions fluides entre les thèmes
 - Boutons élégants avec effets de survol
+- Layout adaptatif (colonnes sur mobile, flexbox sur desktop)
 
 ![Fonctionnalité de recherche](screenshots/appmeteo%20test%20recherche.png)
 ![Géolocalisation](screenshots/appmeteo%20test%20bouton%20chez%20moi%20avec%20geolocalisation.png)
+
+#### Design Responsive
+L'interface s'adapte parfaitement à tous les appareils :
+
+![Version responsive desktop](screenshots/appmeto%20responsive.png)
+![Version responsive mobile avec thème nuit](screenshots/appmeteo%20responsive%20nuit.png)
 
 ## 🚀 Technologies Utilisées
 
@@ -102,7 +112,14 @@ python -m http.server 8000
 2. Autorisez l'accès à votre position
 3. La météo de votre localisation s'affiche
 
-## 🎨 Codes Météo Supportés
+## 🎨 Design et Conception
+
+### Wireframe Initial
+Le projet a été conçu à partir d'un wireframe détaillé pour planifier l'expérience utilisateur :
+
+![Wireframe de conception](screenshots/appmeteo%20wireframe.png)
+
+### Codes Météo Supportés
 
 L'application affiche des émojis correspondant aux conditions météorologiques :
 
@@ -129,10 +146,13 @@ appmeteo/
 ├── LICENSE             # Licence MIT
 └── screenshots/        # Captures d'écran
     ├── appmeteo interface.png
+    ├── appmeteo responsive nuit.png
     ├── appmeteo test affichage pluie via emoticone.png
     ├── appmeteo test bouton chez moi avec geolocalisation.png
     ├── appmeteo test mode nuit pour localisation ou il fait nuit.png
-    └── appmeteo test recherche.png
+    ├── appmeteo test recherche.png
+    ├── appmeteo wireframe.png
+    └── appmeto responsive.png
 ```
 
 ## 🌟 Fonctionnalités Avancées

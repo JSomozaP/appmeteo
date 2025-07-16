@@ -94,3 +94,150 @@ button:hover {
     color: white;
     margin-right: 10px;
 }
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+
+/* Tablettes (768px et moins) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .meteo-header h1 {
+        font-size: 2em;
+    }
+    
+    .coord {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    input[type="text"] {
+        width: 250px;
+        margin: 5px 0;
+    }
+    
+    button {
+        width: 150px;
+        margin: 5px 0;
+    }
+    
+    .city-name {
+        font-size: 2.5em;
+    }
+    
+    .temperature {
+        font-size: 4em;
+    }
+    
+    .weather-icon {
+        font-size: 2.5em;
+    }
+    
+    .local-time {
+        font-size: 1.2em;
+    }
+}
+
+/* Smartphones (480px et moins) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .meteo-header {
+        padding: 15px;
+    }
+    
+    .meteo-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .search-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"] {
+        width: 90%;
+        max-width: 300px;
+        font-size: 16px; /* Évite le zoom automatique sur iOS */
+    }
+    
+    button {
+        width: 90%;
+        max-width: 200px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+    .coord {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .weather-display {
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    
+    .city-name {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        word-break: break-word;
+    }
+    
+    .temperature {
+        font-size: 3em;
+        margin: 15px 0;
+    }
+    
+    .weather-icon {
+        font-size: 2em;
+        margin: 15px 0;
+    }
+    
+    .local-time {
+        font-size: 1em;
+    }
+}
+
+/* Très petits écrans (320px et moins) */
+@media (max-width: 320px) {
+    .meteo-header h1 {
+        font-size: 1.5em;
+    }
+    
+    .city-name {
+        font-size: 1.5em;
+    }
+    
+    .temperature {
+        font-size: 2.5em;
+    }
+    
+    .weather-icon {
+        font-size: 1.8em;
+    }
+    
+    input[type="text"] {
+        width: 95%;
+        padding: 8px 12px;
+    }
+    
+    button {
+        width: 95%;
+        padding: 10px 15px;
+    }
+}
